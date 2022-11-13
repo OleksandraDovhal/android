@@ -3,8 +3,8 @@ package com.example.gifapisimpleapplication.adapters
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Adapter
 import android.widget.CompoundButton
-import androidx.paging.PagedListAdapter
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.gifapisimpleapplication.R
@@ -14,9 +14,7 @@ import kotlinx.android.extensions.LayoutContainer
 import kotlinx.android.synthetic.main.item_feed.view.*
 
 class FeedItemsAdapter(val callback: Callback, val gifsCacheManager: GifsCacheManager) :
-    PagedListAdapter<GifInfo, FeedItemsAdapter.FeedItemViewHolder>(
-        GifInfo.DIFF_CALLBACK
-    ) {
+    RecyclerView.Adapter<FeedItemsAdapter.FeedItemViewHolder>() {
 
     interface Callback {
 
@@ -82,6 +80,7 @@ class FeedItemsAdapter(val callback: Callback, val gifsCacheManager: GifsCacheMa
         }
 
         override fun onClick(view: View?) {
+
             getItem(adapterPosition)?.let {
                 callback.onGifClick(gif = it)
             }
@@ -94,5 +93,9 @@ class FeedItemsAdapter(val callback: Callback, val gifsCacheManager: GifsCacheMa
                     callback.onAddToFavoritesClick(gif = it)
                 }
         }
+    }
+
+    override fun getItemCount(): Int {
+        TODO("Not yet implemented")
     }
 }
