@@ -6,15 +6,14 @@
 
     <uses-sdk
         android:minSdkVersion="29"
-        android:targetSdkVersion="33" />
+        android:targetSdkVersion="32" />
 
-    <permission
-        android:name="com.eragoo.cdu_labs.andoroid.lab3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
-        android:protectionLevel="signature" />
-
-    <uses-permission android:name="com.eragoo.cdu_labs.andoroid.lab3.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+        android:name="com.dovhal.android_labs.android.lab3.App"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -26,9 +25,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Lab5" >
+        android:theme="@style/Theme.Lab3" >
         <activity
-            android:name="com.dovhal.android_labs.android.lab5.activities.MainActivity"
+            android:name="com.dovhal.android_labs.android.lab3.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -41,6 +40,11 @@
                 android:value="" />
         </activity>
 
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
+
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.eragoo.cdu_labs.andoroid.lab3.androidx-startup"
@@ -52,11 +56,6 @@
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
         </provider>
-
-        <service
-            android:name="androidx.room.MultiInstanceInvalidationService"
-            android:directBootAware="true"
-            android:exported="false" />
     </application>
 
 </manifest>
