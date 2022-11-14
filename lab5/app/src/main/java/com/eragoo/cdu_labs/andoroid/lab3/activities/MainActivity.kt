@@ -1,14 +1,14 @@
-package com.eragoo.cdu_labs.andoroid.lab3
+package com.eragoo.cdu_labs.andoroid.lab3.activities
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.room.Room
-import androidx.room.RoomDatabase
-import com.eragoo.cdu_labs.andoroid.lab3.dal.ApplicationDatabase
-import com.eragoo.cdu_labs.andoroid.lab3.dal.User
-import com.eragoo.cdu_labs.andoroid.lab3.dal.UserDto
+import com.eragoo.cdu_labs.andoroid.lab3.R
+import com.eragoo.cdu_labs.andoroid.lab3.adapters.RecyclerAdapter
+import com.eragoo.cdu_labs.andoroid.lab3.entities.UserDto
+import com.eragoo.cdu_labs.andoroid.lab3.database.ApplicationDatabase
+import com.eragoo.cdu_labs.andoroid.lab3.database.enities.User
 import java.util.UUID
 
 class MainActivity : AppCompatActivity() {

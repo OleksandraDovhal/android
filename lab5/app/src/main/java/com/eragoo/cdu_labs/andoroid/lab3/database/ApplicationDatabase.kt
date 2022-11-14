@@ -1,9 +1,11 @@
-package com.eragoo.cdu_labs.andoroid.lab3.dal
+package com.eragoo.cdu_labs.andoroid.lab3.database
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
+import com.eragoo.cdu_labs.andoroid.lab3.database.dao.UserDao
+import com.eragoo.cdu_labs.andoroid.lab3.database.enities.User
 
 @Database(entities = [User::class], version = 1)
 abstract class ApplicationDatabase : RoomDatabase() {

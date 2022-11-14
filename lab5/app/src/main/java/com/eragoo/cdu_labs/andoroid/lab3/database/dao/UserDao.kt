@@ -1,9 +1,10 @@
-package com.eragoo.cdu_labs.andoroid.lab3.dal
+package com.eragoo.cdu_labs.andoroid.lab3.database.dao
 
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
 import androidx.room.Query
+import com.eragoo.cdu_labs.andoroid.lab3.database.enities.User
 
 @Dao
 interface UserDao {

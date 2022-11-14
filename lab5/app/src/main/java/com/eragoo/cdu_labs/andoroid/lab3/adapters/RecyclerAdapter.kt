@@ -1,11 +1,12 @@
-package com.eragoo.cdu_labs.andoroid.lab3
+package com.eragoo.cdu_labs.andoroid.lab3.adapters
 
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-import com.eragoo.cdu_labs.andoroid.lab3.dal.UserDto
+import com.eragoo.cdu_labs.andoroid.lab3.R
+import com.eragoo.cdu_labs.andoroid.lab3.entities.UserDto
 
 class RecyclerAdapter(private val data: List<UserDto>) : RecyclerView.Adapter<RecyclerAdapter.MyViewHolder>() {
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
@@ -13,7 +14,7 @@ class RecyclerAdapter(private val data: List<UserDto>) : RecyclerView.Adapter<Re
         val smallTextView: TextView = itemView.findViewById(R.id.textViewSmall)
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerAdapter.MyViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemView = LayoutInflater.from(parent.context)
                 .inflate(R.layout.recyclerview_item, parent, false)
 
