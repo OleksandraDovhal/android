@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace 'com.eragoo.cdu_labs.andoroid.lab3'
-    compileSdk 32
+    namespace 'com.dovhal.android_labs.android.lab5'
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.eragoo.cdu_labs.andoroid.lab3"
+        applicationId "com.dovhal.android_labs.android.lab5"
         minSdk 29
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -37,13 +37,13 @@ dependencies {
     def roomVersion = "2.4.0-alpha03" // check latest version from docs
 
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
     //Room
     implementation "androidx.room:room-runtime:$roomVersion"

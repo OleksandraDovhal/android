@@ -622,6 +622,15 @@
     <color name="cardview_light_background">#FFFFFFFF</color>
     <color name="cardview_shadow_end_color">#03000000</color>
     <color name="cardview_shadow_start_color">#37000000</color>
+    <color name="chuck_colorAccent">#FF9800</color>
+    <color name="chuck_colorPrimary">#00BCD4</color>
+    <color name="chuck_colorPrimaryDark">#0097A7</color>
+    <color name="chuck_status_300">#0D47A1</color>
+    <color name="chuck_status_400">#FF9800</color>
+    <color name="chuck_status_500">#B71C1C</color>
+    <color name="chuck_status_default">#212121</color>
+    <color name="chuck_status_error">#F44336</color>
+    <color name="chuck_status_requested">#9E9E9E</color>
     <color name="design_bottom_navigation_shadow_color">#14000000</color>
     <color name="design_dark_default_color_background">#121212</color>
     <color name="design_dark_default_color_error">#CF6679</color>
@@ -1688,7 +1697,7 @@
     <string name="abc_shareactionprovider_share_with_application">Share with <ns2:g example="Mail" id="application_name">%s</ns2:g></string>
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <string name="androidx_startup" translatable="false">androidx.startup</string>
-    <string name="app_name">Lab3</string>
+    <string name="app_name">Lab5</string>
     <string name="appbar_scrolling_view_behavior" translatable="false">com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior</string>
     <string name="bottom_sheet_behavior" translatable="false">com.google.android.material.bottomsheet.BottomSheetBehavior</string>
     <string description="A description of an accessibility action to collapse the bottom sheet [CHAR LIMIT=NONE]" name="bottomsheet_action_collapse">Collapse the bottom sheet</string>
@@ -1699,6 +1708,33 @@
     <string name="character_counter_content_description">Characters entered %1$d of %2$d</string>
     <string name="character_counter_overflowed_content_description">Character limit exceeded %1$d of %2$d</string>
     <string name="character_counter_pattern" translatable="false">%1$d/%2$d</string>
+    <string name="chuck_body_content_truncated">\n\n--- Content truncated ---</string>
+    <string name="chuck_body_omitted">(encoded or binary body omitted)</string>
+    <string name="chuck_body_unexpected_eof">\n\n--- Unexpected end of content ---</string>
+    <string name="chuck_browse_sql_database">Browse SQLite database</string>
+    <string name="chuck_clear">Clear</string>
+    <string name="chuck_duration">Duration</string>
+    <string name="chuck_method">Method</string>
+    <string name="chuck_name">Chuck</string>
+    <string name="chuck_no">No</string>
+    <string name="chuck_notification_title">Recording HTTP activity</string>
+    <string name="chuck_overview">Overview</string>
+    <string name="chuck_protocol">Protocol</string>
+    <string name="chuck_request">Request</string>
+    <string name="chuck_request_size">Request size</string>
+    <string name="chuck_request_time">Request time</string>
+    <string name="chuck_response">Response</string>
+    <string name="chuck_response_size">Response size</string>
+    <string name="chuck_response_time">Response time</string>
+    <string name="chuck_search">Search</string>
+    <string name="chuck_share">Share</string>
+    <string name="chuck_share_as_curl">Share as curl command</string>
+    <string name="chuck_share_as_text">Share as text</string>
+    <string name="chuck_ssl">SSL</string>
+    <string name="chuck_status">Status</string>
+    <string name="chuck_total_size">Total size</string>
+    <string name="chuck_url">URL</string>
+    <string name="chuck_yes">Yes</string>
     <string name="clear_text_end_icon_content_description">Clear text</string>
     <string description="Screen reader announcement for when a checkbox is on error. [CHAR LIMIT=NONE]" name="error_a11y_label">
     Error: invalid
@@ -1803,6 +1839,7 @@
     <string name="mtrl_switch_track_path" translatable="false">M0,16 A16,16 0 0,1 16,0 H36 A16,16 0 0,1 36,32 H16 A16,16 0 0,1 0,16</string>
     <string description="Button text to indicate that the widget will ignore the user&apos;s selection [CHAR_LIMIT=16]" name="mtrl_timepicker_cancel">Cancel</string>
     <string description="Button text to indicate that the widget will save the user&apos;s selection [CHAR_LIMIT=16]" name="mtrl_timepicker_confirm">OK</string>
+    <string name="notification_category">Chuck HTTP notifications</string>
     <string name="password_toggle_content_description">Show password</string>
     <string name="path_password_eye" translatable="false">M12,4.5C7,4.5 2.73,7.61 1,12c1.73,4.39 6,7.5 11,7.5s9.27,-3.11 11,-7.5c-1.73,-4.39 -6,-7.5 -11,-7.5zM12,17c-2.76,0 -5,-2.24 -5,-5s2.24,-5 5,-5 5,2.24 5,5 -2.24,5 -5,5zM12,9c-1.66,0 -3,1.34 -3,3s1.34,3 3,3 3,-1.34 3,-3 -1.34,-3 -3,-3z</string>
     <string name="path_password_eye_mask_strike_through" translatable="false">M2,4.27 L19.73,22 L22.27,19.46 L4.54,1.73 L4.54,1 L23,1 L23,23 L1,23 L1,4.27 Z</string>
@@ -5021,6 +5058,27 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
+    <style name="Chuck.TextAppearance.Label" parent="android:TextAppearance.Small">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Chuck.TextAppearance.ListItem" parent="android:TextAppearance">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Chuck.TextAppearance.TransactionTitle" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:gravity">top</item>
+        <item name="android:textSize" ns1:ignore="SpUsage">16dp</item>
+        <item name="android:maxLines">2</item>
+    </style>
+    <style name="Chuck.TextAppearance.Value" parent="android:TextAppearance.Small">
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textIsSelectable">true</item>
+    </style>
+    <style name="Chuck.Theme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/chuck_colorPrimary</item>
+        <item name="colorPrimaryDark">@color/chuck_colorPrimaryDark</item>
+        <item name="colorAccent">@color/chuck_colorAccent</item>
+    </style>
     <style name="MaterialAlertDialog.Material3" parent="MaterialAlertDialog.MaterialComponents">
     <item name="enforceMaterialTheme">true</item>
     <item name="android:layout">@layout/m3_alert_dialog</item>
@@ -5848,7 +5906,7 @@
     <item name="windowActionBar">false</item>
     <item name="windowNoTitle">true</item>
   </style>
-    <style name="Theme.Lab3" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Lab5" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         
         <item name="colorPrimary">@color/purple_500</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>

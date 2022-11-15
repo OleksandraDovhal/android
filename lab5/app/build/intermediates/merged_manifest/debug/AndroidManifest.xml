@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.eragoo.cdu_labs.andoroid.lab3"
+    package="com.dovhal.android_labs.android.lab5"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="29"
-        android:targetSdkVersion="32" />
+        android:targetSdkVersion="33" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
+    <permission
+        android:name="com.dovhal.android_labs.android.lab5.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.dovhal.android_labs.android.lab5.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+
     <application
-        android:name="com.dovhal.android_labs.android.lab3.App"
+        android:name="com.dovhal.android_labs.android.lab5.App"
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -25,9 +31,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:testOnly="true"
-        android:theme="@style/Theme.Lab3" >
+        android:theme="@style/Theme.Lab5" >
         <activity
-            android:name="com.dovhal.android_labs.android.lab3.MainActivity"
+            android:name="com.dovhal.android_labs.android.lab5.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,14 +46,29 @@
                 android:value="" />
         </activity>
 
+        <provider
+            android:name="com.readystatesoftware.chuck.internal.data.ChuckContentProvider"
+            android:authorities="com.dovhal.android_labs.android.lab5.chuck.provider"
+            android:exported="false" />
+
+        <activity
+            android:name="com.readystatesoftware.chuck.internal.ui.MainActivity"
+            android:label="@string/chuck_name"
+            android:launchMode="singleTask"
+            android:taskAffinity="com.readystatesoftware.chuck.task"
+            android:theme="@style/Chuck.Theme" />
+        <activity
+            android:name="com.readystatesoftware.chuck.internal.ui.TransactionActivity"
+            android:parentActivityName="com.readystatesoftware.chuck.internal.ui.MainActivity"
+            android:theme="@style/Chuck.Theme" />
+
         <service
-            android:name="androidx.room.MultiInstanceInvalidationService"
-            android:directBootAware="true"
+            android:name="com.readystatesoftware.chuck.internal.support.ClearTransactionsService"
             android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.eragoo.cdu_labs.andoroid.lab3.androidx-startup"
+            android:authorities="com.dovhal.android_labs.android.lab5.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"
@@ -56,6 +77,11 @@
                 android:name="androidx.lifecycle.ProcessLifecycleInitializer"
                 android:value="androidx.startup" />
         </provider>
+
+        <service
+            android:name="androidx.room.MultiInstanceInvalidationService"
+            android:directBootAware="true"
+            android:exported="false" />
     </application>
 
 </manifest>
