@@ -81,73 +81,73 @@
 46-->/Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManifest.xml:31:17-33
 47        </activity>
 48
-49        <provider
-49-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:23:9-26:40
-50            android:name="com.readystatesoftware.chuck.internal.data.ChuckContentProvider"
-50-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:24:13-91
-51            android:authorities="com.dovhal.android_labs.android.lab5.chuck.provider"
-51-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:25:13-66
+49        <service
+49-->[androidx.room:room-runtime:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/915d6ae575d5f9301f4af6f88af7c350/transformed/room-runtime-2.5.0-beta02/AndroidManifest.xml:24:9-28:63
+50            android:name="androidx.room.MultiInstanceInvalidationService"
+50-->[androidx.room:room-runtime:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/915d6ae575d5f9301f4af6f88af7c350/transformed/room-runtime-2.5.0-beta02/AndroidManifest.xml:25:13-74
+51            android:directBootAware="true"
+51-->[androidx.room:room-runtime:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/915d6ae575d5f9301f4af6f88af7c350/transformed/room-runtime-2.5.0-beta02/AndroidManifest.xml:26:13-43
 52            android:exported="false" />
-52-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:26:13-37
+52-->[androidx.room:room-runtime:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/915d6ae575d5f9301f4af6f88af7c350/transformed/room-runtime-2.5.0-beta02/AndroidManifest.xml:27:13-37
 53
-54        <activity
-54-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:28:9-33:50
-55            android:name="com.readystatesoftware.chuck.internal.ui.MainActivity"
-55-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:29:13-81
-56            android:label="@string/chuck_name"
-56-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:30:13-47
-57            android:launchMode="singleTask"
-57-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:31:13-44
-58            android:taskAffinity="com.readystatesoftware.chuck.task"
-58-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:32:13-69
-59            android:theme="@style/Chuck.Theme" />
-59-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:33:13-47
-60        <activity
-60-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:34:9-37:50
-61            android:name="com.readystatesoftware.chuck.internal.ui.TransactionActivity"
-61-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:35:13-88
-62            android:parentActivityName="com.readystatesoftware.chuck.internal.ui.MainActivity"
-62-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:36:13-95
-63            android:theme="@style/Chuck.Theme" />
-63-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:37:13-47
-64
-65        <service
-65-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:39:9-41:40
-66            android:name="com.readystatesoftware.chuck.internal.support.ClearTransactionsService"
-66-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:40:13-98
-67            android:exported="false" />
-67-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:41:13-37
-68
-69        <provider
-69-->[androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
-70            android:name="androidx.startup.InitializationProvider"
-70-->[androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
-71            android:authorities="com.dovhal.android_labs.android.lab5.androidx-startup"
-71-->[androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
-72            android:exported="false" >
-72-->[androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
-73            <meta-data
-73-->[androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
-74                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-74-->[androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
-75                android:value="androidx.startup" />
-75-->[androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
-76            <meta-data
-76-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/olyadowgal/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
-77                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-77-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/olyadowgal/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
-78                android:value="androidx.startup" />
-78-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/olyadowgal/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
-79        </provider>
-80
-81        <service
-81-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/62056c6f83df23a1347f5b8551a5820c/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:25:9-28:40
-82            android:name="androidx.room.MultiInstanceInvalidationService"
-82-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/62056c6f83df23a1347f5b8551a5820c/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:26:13-74
-83            android:directBootAware="true"
-83-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/62056c6f83df23a1347f5b8551a5820c/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:27:13-43
-84            android:exported="false" />
-84-->[androidx.room:room-runtime:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/62056c6f83df23a1347f5b8551a5820c/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:28:13-37
+54        <provider
+54-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:23:9-26:40
+55            android:name="com.readystatesoftware.chuck.internal.data.ChuckContentProvider"
+55-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:24:13-91
+56            android:authorities="com.dovhal.android_labs.android.lab5.chuck.provider"
+56-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:25:13-66
+57            android:exported="false" />
+57-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:26:13-37
+58
+59        <activity
+59-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:28:9-33:50
+60            android:name="com.readystatesoftware.chuck.internal.ui.MainActivity"
+60-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:29:13-81
+61            android:label="@string/chuck_name"
+61-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:30:13-47
+62            android:launchMode="singleTask"
+62-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:31:13-44
+63            android:taskAffinity="com.readystatesoftware.chuck.task"
+63-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:32:13-69
+64            android:theme="@style/Chuck.Theme" />
+64-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:33:13-47
+65        <activity
+65-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:34:9-37:50
+66            android:name="com.readystatesoftware.chuck.internal.ui.TransactionActivity"
+66-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:35:13-88
+67            android:parentActivityName="com.readystatesoftware.chuck.internal.ui.MainActivity"
+67-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:36:13-95
+68            android:theme="@style/Chuck.Theme" />
+68-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:37:13-47
+69
+70        <service
+70-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:39:9-41:40
+71            android:name="com.readystatesoftware.chuck.internal.support.ClearTransactionsService"
+71-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:40:13-98
+72            android:exported="false" />
+72-->[com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:41:13-37
+73
+74        <provider
+74-->[androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+75            android:name="androidx.startup.InitializationProvider"
+75-->[androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:25:13-67
+76            android:authorities="com.dovhal.android_labs.android.lab5.androidx-startup"
+76-->[androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:26:13-68
+77            android:exported="false" >
+77-->[androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:27:13-37
+78            <meta-data
+78-->[androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:29:13-31:52
+79                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+79-->[androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:30:17-75
+80                android:value="androidx.startup" />
+80-->[androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:31:17-49
+81            <meta-data
+81-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/olyadowgal/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
+82                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+82-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/olyadowgal/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:32:17-78
+83                android:value="androidx.startup" />
+83-->[androidx.lifecycle:lifecycle-process:2.4.1] /Users/olyadowgal/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:33:17-49
+84        </provider>
 85    </application>
 86
 87</manifest>

@@ -4,7 +4,8 @@ ADDED from /Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManifest.
 INJECTED from /Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManifest.xml:2:1-35:12
 INJECTED from /Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManifest.xml:2:1-35:12
 INJECTED from /Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManifest.xml:2:1-35:12
-MERGED from [androidx.room:room-ktx:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/3504daf58ca5543b2eeca1f8159fef62/transformed/jetified-room-ktx-2.4.0-alpha03/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.room:room-ktx:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/ce0e54a2c031d5f59ca3ee30ff1342da/transformed/jetified-room-ktx-2.5.0-beta02/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.room:room-runtime:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/915d6ae575d5f9301f4af6f88af7c350/transformed/room-runtime-2.5.0-beta02/AndroidManifest.xml:17:1-31:12
 MERGED from [com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:17:1-44:12
 MERGED from [com.google.android.material:material:1.7.0] /Users/olyadowgal/.gradle/caches/transforms-3/53edefe15d403f8467620aa121e38059/transformed/material-1.7.0/AndroidManifest.xml:17:1-26:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/olyadowgal/.gradle/caches/transforms-3/38043517c514ada7a9c17da61d45b16b/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
@@ -30,15 +31,14 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/olyadowgal/.gradle
 MERGED from [androidx.customview:customview:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/164e3c0afb92a7e3b5c15f9935adbebd/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.9.0] /Users/olyadowgal/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.core:core-ktx:1.9.0] /Users/olyadowgal/.gradle/caches/transforms-3/4c666ee4e9502ea3205dee12a9a32221/transformed/jetified-core-ktx-1.9.0/AndroidManifest.xml:2:1-7:12
-MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/62056c6f83df23a1347f5b8551a5820c/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:17:1-31:12
 MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/9d3ae9fbc8b4c31d332e4ee556f746a7/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/ca7ba734a5182e4029047ba0e9e8fab6/transformed/sqlite-framework-2.3.0-beta02/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.sqlite:sqlite:2.3.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/da939f95a43896545c86e21467d7585b/transformed/sqlite-2.3.0-beta02/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/olyadowgal/.gradle/caches/transforms-3/56c8e8a27068d68a4c0fd4ce9c0c4322/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/olyadowgal/.gradle/caches/transforms-3/d61520087bb53d23a4e3afad5636d15d/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/olyadowgal/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:17:1-37:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/olyadowgal/.gradle/caches/transforms-3/ecb295b800ded09051f724a4ba193524/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/olyadowgal/.gradle/caches/transforms-3/3d0b12a6a2875ebc8055ad98f7863014/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.sqlite:sqlite-framework:2.2.0-alpha01] /Users/olyadowgal/.gradle/caches/transforms-3/7022a13e1dabd2aa14bd31cbae579e9a/transformed/sqlite-framework-2.2.0-alpha01/AndroidManifest.xml:17:1-24:12
-MERGED from [androidx.sqlite:sqlite:2.2.0-alpha01] /Users/olyadowgal/.gradle/caches/transforms-3/d069a10ef5900347efa9b58fdf6d6d41/transformed/sqlite-2.2.0-alpha01/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/olyadowgal/.gradle/caches/transforms-3/7f4858d3b05a121bbfdbd0f3702fd854/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/olyadowgal/.gradle/caches/transforms-3/14779f0273fd86f43e1f02af1bcd1f85/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
 MERGED from [androidx.tracing:tracing:1.0.0] /Users/olyadowgal/.gradle/caches/transforms-3/05c60de61a6baf2d3b3a5a3431136800/transformed/jetified-tracing-1.0.0/AndroidManifest.xml:17:1-24:12
@@ -82,6 +82,8 @@ ADDED from /Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManifest.
 		ADDED from /Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManifest.xml:7:22-77
 application
 ADDED from /Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManifest.xml:9:5-33:19
+MERGED from [androidx.room:room-runtime:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/915d6ae575d5f9301f4af6f88af7c350/transformed/room-runtime-2.5.0-beta02/AndroidManifest.xml:23:5-29:19
+MERGED from [androidx.room:room-runtime:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/915d6ae575d5f9301f4af6f88af7c350/transformed/room-runtime-2.5.0-beta02/AndroidManifest.xml:23:5-29:19
 MERGED from [com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:22:5-42:19
 MERGED from [com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:22:5-42:19
 MERGED from [com.google.android.material:material:1.7.0] /Users/olyadowgal/.gradle/caches/transforms-3/53edefe15d403f8467620aa121e38059/transformed/material-1.7.0/AndroidManifest.xml:24:5-20
@@ -92,8 +94,6 @@ MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/tran
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/a44fe69b7f5ac0e141d6bda2f04e92a5/transformed/jetified-emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.9.0] /Users/olyadowgal/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.9.0] /Users/olyadowgal/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
-MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/62056c6f83df23a1347f5b8551a5820c/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:24:5-29:19
-MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/62056c6f83df23a1347f5b8551a5820c/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:24:5-29:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/olyadowgal/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/olyadowgal/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:25:5-35:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/olyadowgal/.gradle/caches/transforms-3/7f4858d3b05a121bbfdbd0f3702fd854/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
@@ -148,8 +148,10 @@ uses-sdk
 INJECTED from /Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManifest.xml
 INJECTED from /Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManifest.xml
-MERGED from [androidx.room:room-ktx:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/3504daf58ca5543b2eeca1f8159fef62/transformed/jetified-room-ktx-2.4.0-alpha03/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-ktx:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/3504daf58ca5543b2eeca1f8159fef62/transformed/jetified-room-ktx-2.4.0-alpha03/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.room:room-ktx:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/ce0e54a2c031d5f59ca3ee30ff1342da/transformed/jetified-room-ktx-2.5.0-beta02/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-ktx:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/ce0e54a2c031d5f59ca3ee30ff1342da/transformed/jetified-room-ktx-2.5.0-beta02/AndroidManifest.xml:20:5-44
+MERGED from [androidx.room:room-runtime:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/915d6ae575d5f9301f4af6f88af7c350/transformed/room-runtime-2.5.0-beta02/AndroidManifest.xml:21:5-44
+MERGED from [androidx.room:room-runtime:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/915d6ae575d5f9301f4af6f88af7c350/transformed/room-runtime-2.5.0-beta02/AndroidManifest.xml:21:5-44
 MERGED from [com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.7.0] /Users/olyadowgal/.gradle/caches/transforms-3/53edefe15d403f8467620aa121e38059/transformed/material-1.7.0/AndroidManifest.xml:20:5-22:41
@@ -200,10 +202,12 @@ MERGED from [androidx.core:core:1.9.0] /Users/olyadowgal/.gradle/caches/transfor
 MERGED from [androidx.core:core:1.9.0] /Users/olyadowgal/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core-ktx:1.9.0] /Users/olyadowgal/.gradle/caches/transforms-3/4c666ee4e9502ea3205dee12a9a32221/transformed/jetified-core-ktx-1.9.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.9.0] /Users/olyadowgal/.gradle/caches/transforms-3/4c666ee4e9502ea3205dee12a9a32221/transformed/jetified-core-ktx-1.9.0/AndroidManifest.xml:5:5-44
-MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/62056c6f83df23a1347f5b8551a5820c/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/62056c6f83df23a1347f5b8551a5820c/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/9d3ae9fbc8b4c31d332e4ee556f746a7/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.savedstate:savedstate:1.2.0] /Users/olyadowgal/.gradle/caches/transforms-3/9d3ae9fbc8b4c31d332e4ee556f746a7/transformed/jetified-savedstate-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/ca7ba734a5182e4029047ba0e9e8fab6/transformed/sqlite-framework-2.3.0-beta02/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite-framework:2.3.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/ca7ba734a5182e4029047ba0e9e8fab6/transformed/sqlite-framework-2.3.0-beta02/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.3.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/da939f95a43896545c86e21467d7585b/transformed/sqlite-2.3.0-beta02/AndroidManifest.xml:20:5-44
+MERGED from [androidx.sqlite:sqlite:2.3.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/da939f95a43896545c86e21467d7585b/transformed/sqlite-2.3.0-beta02/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/olyadowgal/.gradle/caches/transforms-3/56c8e8a27068d68a4c0fd4ce9c0c4322/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.3.0] /Users/olyadowgal/.gradle/caches/transforms-3/56c8e8a27068d68a4c0fd4ce9c0c4322/transformed/jetified-annotation-experimental-1.3.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/olyadowgal/.gradle/caches/transforms-3/d61520087bb53d23a4e3afad5636d15d/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
@@ -214,10 +218,6 @@ MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/olyadowgal/.grad
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.5.1] /Users/olyadowgal/.gradle/caches/transforms-3/ecb295b800ded09051f724a4ba193524/transformed/lifecycle-runtime-2.5.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/olyadowgal/.gradle/caches/transforms-3/3d0b12a6a2875ebc8055ad98f7863014/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/olyadowgal/.gradle/caches/transforms-3/3d0b12a6a2875ebc8055ad98f7863014/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.sqlite:sqlite-framework:2.2.0-alpha01] /Users/olyadowgal/.gradle/caches/transforms-3/7022a13e1dabd2aa14bd31cbae579e9a/transformed/sqlite-framework-2.2.0-alpha01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite-framework:2.2.0-alpha01] /Users/olyadowgal/.gradle/caches/transforms-3/7022a13e1dabd2aa14bd31cbae579e9a/transformed/sqlite-framework-2.2.0-alpha01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite:2.2.0-alpha01] /Users/olyadowgal/.gradle/caches/transforms-3/d069a10ef5900347efa9b58fdf6d6d41/transformed/sqlite-2.2.0-alpha01/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.sqlite:sqlite:2.2.0-alpha01] /Users/olyadowgal/.gradle/caches/transforms-3/d069a10ef5900347efa9b58fdf6d6d41/transformed/sqlite-2.2.0-alpha01/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/olyadowgal/.gradle/caches/transforms-3/7f4858d3b05a121bbfdbd0f3702fd854/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/olyadowgal/.gradle/caches/transforms-3/7f4858d3b05a121bbfdbd0f3702fd854/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/olyadowgal/.gradle/caches/transforms-3/14779f0273fd86f43e1f02af1bcd1f85/transformed/jetified-startup-runtime-1.1.1/AndroidManifest.xml:21:5-23:41
@@ -248,6 +248,16 @@ INJECTED from /Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManife
 		INJECTED from /Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManifest.xml
 		ADDED from /Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManifest.xml
 		INJECTED from /Users/olyadowgal/Projects/android/lab5/app/src/main/AndroidManifest.xml
+service#androidx.room.MultiInstanceInvalidationService
+ADDED from [androidx.room:room-runtime:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/915d6ae575d5f9301f4af6f88af7c350/transformed/room-runtime-2.5.0-beta02/AndroidManifest.xml:24:9-28:63
+	android:exported
+		ADDED from [androidx.room:room-runtime:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/915d6ae575d5f9301f4af6f88af7c350/transformed/room-runtime-2.5.0-beta02/AndroidManifest.xml:27:13-37
+	tools:ignore
+		ADDED from [androidx.room:room-runtime:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/915d6ae575d5f9301f4af6f88af7c350/transformed/room-runtime-2.5.0-beta02/AndroidManifest.xml:28:13-60
+	android:directBootAware
+		ADDED from [androidx.room:room-runtime:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/915d6ae575d5f9301f4af6f88af7c350/transformed/room-runtime-2.5.0-beta02/AndroidManifest.xml:26:13-43
+	android:name
+		ADDED from [androidx.room:room-runtime:2.5.0-beta02] /Users/olyadowgal/.gradle/caches/transforms-3/915d6ae575d5f9301f4af6f88af7c350/transformed/room-runtime-2.5.0-beta02/AndroidManifest.xml:25:13-74
 provider#com.readystatesoftware.chuck.internal.data.ChuckContentProvider
 ADDED from [com.readystatesoftware.chuck:library:1.1.0] /Users/olyadowgal/.gradle/caches/transforms-3/f68dc89b398d7b02a945a57e581cd9af/transformed/jetified-library-1.1.0/AndroidManifest.xml:23:9-26:40
 	android:authorities
@@ -322,14 +332,6 @@ uses-permission#com.dovhal.android_labs.android.lab5.DYNAMIC_RECEIVER_NOT_EXPORT
 ADDED from [androidx.core:core:1.9.0] /Users/olyadowgal/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:26:5-97
 	android:name
 		ADDED from [androidx.core:core:1.9.0] /Users/olyadowgal/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/AndroidManifest.xml:26:22-94
-service#androidx.room.MultiInstanceInvalidationService
-ADDED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/62056c6f83df23a1347f5b8551a5820c/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:25:9-28:40
-	android:exported
-		ADDED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/62056c6f83df23a1347f5b8551a5820c/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:28:13-37
-	android:directBootAware
-		ADDED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/62056c6f83df23a1347f5b8551a5820c/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:27:13-43
-	android:name
-		ADDED from [androidx.room:room-runtime:2.4.0-alpha03] /Users/olyadowgal/.gradle/caches/transforms-3/62056c6f83df23a1347f5b8551a5820c/transformed/room-runtime-2.4.0-alpha03/AndroidManifest.xml:26:13-74
 meta-data#androidx.lifecycle.ProcessLifecycleInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.4.1] /Users/olyadowgal/.gradle/caches/transforms-3/baa824db3c1bec348e984fa25af19fb7/transformed/jetified-lifecycle-process-2.4.1/AndroidManifest.xml:31:13-33:52
 	android:value

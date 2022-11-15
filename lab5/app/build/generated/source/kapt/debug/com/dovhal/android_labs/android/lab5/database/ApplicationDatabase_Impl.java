@@ -54,7 +54,7 @@ public final class ApplicationDatabase_Impl extends ApplicationDatabase {
       }
 
       @Override
-      protected void onCreate(SupportSQLiteDatabase _db) {
+      public void onCreate(SupportSQLiteDatabase _db) {
         if (mCallbacks != null) {
           for (int _i = 0, _size = mCallbacks.size(); _i < _size; _i++) {
             mCallbacks.get(_i).onCreate(_db);
@@ -83,7 +83,7 @@ public final class ApplicationDatabase_Impl extends ApplicationDatabase {
       }
 
       @Override
-      protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
+      public RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
         final HashMap<String, TableInfo.Column> _columnsCity = new HashMap<String, TableInfo.Column>(4);
         _columnsCity.put("city_id", new TableInfo.Column("city_id", "TEXT", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCity.put("city_name", new TableInfo.Column("city_name", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
@@ -91,7 +91,7 @@ public final class ApplicationDatabase_Impl extends ApplicationDatabase {
         _columnsCity.put("founded", new TableInfo.Column("founded", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysCity = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesCity = new HashSet<TableInfo.Index>(1);
-        _indicesCity.add(new TableInfo.Index("index_city_city_id", false, Arrays.asList("city_id")));
+        _indicesCity.add(new TableInfo.Index("index_city_city_id", false, Arrays.asList("city_id"), Arrays.asList("ASC")));
         final TableInfo _infoCity = new TableInfo("city", _columnsCity, _foreignKeysCity, _indicesCity);
         final TableInfo _existingCity = TableInfo.read(_db, "city");
         if (! _infoCity.equals(_existingCity)) {
