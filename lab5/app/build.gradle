@@ -14,6 +14,10 @@ android {
         versionCode 1
         versionName "1.0"
 
+        //TODO: use correct API key
+        buildConfigField 'String', 'BASE_URL', '"https://openweathermap.org/data/2.5/"'
+        buildConfigField 'String', 'API_KEY', '"eba7a84d36f0df97c15b6a10dc743760"'
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 

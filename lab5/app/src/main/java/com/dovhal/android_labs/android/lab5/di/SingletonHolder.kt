@@ -34,7 +34,7 @@ object SingletonHolder {
             .fallbackToDestructiveMigration()
             .build()
     }
-    
+
     private val okHttpClient by lazy {
         OkHttpClient.Builder()
             .connectTimeout(30, TimeUnit.SECONDS)
@@ -51,7 +51,7 @@ object SingletonHolder {
         Retrofit.Builder()
             .baseUrl(BuildConfig.BASE_URL)
             .client(okHttpClient)
-            .addConverterFactory(Json.asConverterFactory("application/x-www-form-urlencoded".toMediaType()))
+            .addConverterFactory(Json.asConverterFactory("application/json".toMediaType()))
             .build()
     }
 
