@@ -4,8 +4,22 @@ import android.content.Context
 import android.util.Log
 import com.dovhal.android_labs.android.lab5.database.City
 import com.dovhal.android_labs.android.lab5.database.CityDao
+import com.dovhal.android_labs.android.lab5.network.ApiClient
+import com.dovhal.android_labs.android.lab5.network.responces.WeatherResponse
+import kotlinx.coroutines.GlobalScope.coroutineContext
+import kotlinx.coroutines.withContext
+import retrofit2.await
 
-class CityRepository(private val cityDao: CityDao, val context: Context) {
+class CityRepository(
+    private val cityDao: CityDao,
+    val apiClient: ApiClient,
+    val context: Context
+) {
+
+    suspend fun getCurrentWeather(location: String): WeatherResponse =
+        withContext(coroutineContext) {
+            apiClient.weatherService.getCurrentWeather(location).await()
+        }
 
     suspend fun getCitiesList(): List<City>? {
         return try {
@@ -24,6 +38,7 @@ class CityRepository(private val cityDao: CityDao, val context: Context) {
         }
 
     }
+
     suspend fun insertCity(city: City) {
         cityDao.insert(city)
     }
