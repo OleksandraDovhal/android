@@ -25,7 +25,7 @@ class WeatherDialog(val weatherResponse: WeatherResponse, context: Context) : Al
 
         textViewTemperature = view.findViewById(R.id.textViewTemperature)
         textWindSpeed = view.findViewById(R.id.textWindSpeed)
-        textTime = view.findViewById(R.id.textWindSpeed)
+        textTime = view.findViewById(R.id.textTime)
 
         textViewTemperature.text = "Temperature: ${weatherResponse.currentWeather.temperature}"
         textWindSpeed.text = "Wind Speed: ${weatherResponse.currentWeather.windspeed}"
