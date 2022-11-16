@@ -24,9 +24,14 @@ class CityListAdapter(
             notifyDataSetChanged()
         }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CityViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(viewType, parent, false)
-        return CityViewHolder(view)
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): CityListAdapter.CityViewHolder {
+        val itemView = LayoutInflater.from(parent.context)
+            .inflate(R.layout.recyclerview_item, parent, false)
+
+        return CityViewHolder(itemView)
     }
 
     override fun getItemCount() = cityList.size

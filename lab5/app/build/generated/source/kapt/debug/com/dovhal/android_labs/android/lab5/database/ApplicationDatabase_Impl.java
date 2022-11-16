@@ -27,20 +27,22 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import javax.annotation.processing.Generated;
 
+@Generated("androidx.room.RoomProcessor")
 @SuppressWarnings({"unchecked", "deprecation"})
 public final class ApplicationDatabase_Impl extends ApplicationDatabase {
   private volatile CityDao _cityDao;
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(3) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(4) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `city` (`city_id` TEXT NOT NULL, `city_name` TEXT NOT NULL, `city_area` TEXT NOT NULL, `founded` INTEGER NOT NULL, PRIMARY KEY(`city_id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `city` (`city_id` TEXT NOT NULL, `city_name` TEXT NOT NULL, `city_area` TEXT NOT NULL, `founded` INTEGER NOT NULL, `location` TEXT NOT NULL, PRIMARY KEY(`city_id`))");
         _db.execSQL("CREATE INDEX IF NOT EXISTS `index_city_city_id` ON `city` (`city_id`)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '60dec25c55a868db51464cddfa82505c')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '3c6bb39bdd015c6579a44bdb1d0cf5a6')");
       }
 
       @Override
@@ -84,11 +86,12 @@ public final class ApplicationDatabase_Impl extends ApplicationDatabase {
 
       @Override
       public RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsCity = new HashMap<String, TableInfo.Column>(4);
+        final HashMap<String, TableInfo.Column> _columnsCity = new HashMap<String, TableInfo.Column>(5);
         _columnsCity.put("city_id", new TableInfo.Column("city_id", "TEXT", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCity.put("city_name", new TableInfo.Column("city_name", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCity.put("city_area", new TableInfo.Column("city_area", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCity.put("founded", new TableInfo.Column("founded", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsCity.put("location", new TableInfo.Column("location", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysCity = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesCity = new HashSet<TableInfo.Index>(1);
         _indicesCity.add(new TableInfo.Index("index_city_city_id", false, Arrays.asList("city_id"), Arrays.asList("ASC")));
@@ -101,7 +104,7 @@ public final class ApplicationDatabase_Impl extends ApplicationDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "60dec25c55a868db51464cddfa82505c", "bc8fdbcb47c8505dcbb3fd5e4139b5c6");
+    }, "3c6bb39bdd015c6579a44bdb1d0cf5a6", "fe017cb8b6bd73db27af5bc365a8141d");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

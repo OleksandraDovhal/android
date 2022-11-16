@@ -12,5 +12,5 @@ public final class BuildConfig {
   // Field from default config.
   public static final String API_KEY = "eba7a84d36f0df97c15b6a10dc743760";
   // Field from default config.
-  public static final String BASE_URL = "https://openweathermap.org/data/2.5/";
+  public static final String BASE_URL = "https://api.open-meteo.com/v1/";
 }

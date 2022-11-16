@@ -7,6 +7,11 @@ import retrofit2.http.Query
 
 interface WeatherApiService {
 
-    @GET("weather")
-    fun getCurrentWeather(@Query("q") location: String): Call<WeatherResponse>
+    @GET("forecast?")
+    suspend fun getCurrentWeather(
+        @Query("latitude") latitude: Float,
+        @Query("longitude") longitude: Float,
+        @Query("current_weather") currentWeather: Boolean
+    ): Call<WeatherResponse>
+
 }

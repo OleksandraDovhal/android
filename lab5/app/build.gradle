@@ -1,8 +1,9 @@
 plugins {
     id 'com.android.application'
     id 'org.jetbrains.kotlin.android'
-}
+    id 'kotlin-kapt'
 
+}
 android {
     namespace 'com.dovhal.android_labs.android.lab5'
     compileSdk 33
@@ -15,7 +16,7 @@ android {
         versionName "1.0"
 
         //TODO: use correct API key
-        buildConfigField 'String', 'BASE_URL', '"https://openweathermap.org/data/2.5/"'
+        buildConfigField 'String', 'BASE_URL', '"https://api.open-meteo.com/v1/"'
         buildConfigField 'String', 'API_KEY', '"eba7a84d36f0df97c15b6a10dc743760"'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -28,8 +29,8 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions {
         jvmTarget = '1.8'
@@ -64,10 +65,15 @@ dependencies {
 
     //Retrofit
     implementation "com.squareup.retrofit2:retrofit:2.9.0"
-    implementation 'com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0'
+    implementation "com.squareup.retrofit2:converter-moshi:2.9.0"
+    implementation "com.squareup.okhttp3:logging-interceptor:4.10.0"
+
+    //Moshi
+    implementation("com.squareup.moshi:moshi:1.14.0")
+    kapt("com.squareup.moshi:moshi-kotlin-codegen:1.14.0")
 
     // OkHttp
-    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.9.1"))
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.10.0"))
     implementation("com.squareup.okhttp3:okhttp")
     implementation("com.squareup.okhttp3:logging-interceptor")
 }

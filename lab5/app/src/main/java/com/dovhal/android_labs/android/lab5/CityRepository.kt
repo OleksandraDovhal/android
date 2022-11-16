@@ -16,9 +16,10 @@ class CityRepository(
     val context: Context
 ) {
 
-    suspend fun getCurrentWeather(location: String): WeatherResponse =
+    suspend fun getCurrentWeather(latitude: Float, longitude: Float): WeatherResponse =
         withContext(coroutineContext) {
-            apiClient.weatherService.getCurrentWeather(location).await()
+            return@withContext apiClient.weatherService.getCurrentWeather(latitude, longitude, true)
+                .await()
         }
 
     suspend fun getCitiesList(): List<City>? {
