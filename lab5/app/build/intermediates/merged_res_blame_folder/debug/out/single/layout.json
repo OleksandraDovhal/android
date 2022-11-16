@@ -1,10 +1,14 @@
 [
     {
-        "merged": "com.dovhal.android_labs.android.lab5.app-mergeDebugResources-49:/layout/activity_main.xml",
-        "source": "com.dovhal.android_labs.android.lab5.app-main-52:/layout/activity_main.xml"
+        "merged": "com.dovhal.android_labs.android.lab5.app-mergeDebugResources-49:/layout/weather_dialog_fragment.xml",
+        "source": "com.dovhal.android_labs.android.lab5.app-main-52:/layout/weather_dialog_fragment.xml"
     },
     {
-        "merged": "com.dovhal.android_labs.android.lab5.app-mergeDebugResources-49:/layout/recyclerview_item.xml",
-        "source": "com.dovhal.android_labs.android.lab5.app-main-52:/layout/recyclerview_item.xml"
+        "merged": "/Users/olyadowgal/.gradle/daemon/7.4/com.dovhal.android_labs.android.lab5.app-mergeDebugResources-49:/layout/recyclerview_item.xml",
+        "source": "/Users/olyadowgal/.gradle/daemon/7.4/com.dovhal.android_labs.android.lab5.app-main-52:/layout/recyclerview_item.xml"
+    },
+    {
+        "merged": "/Users/olyadowgal/.gradle/daemon/7.4/com.dovhal.android_labs.android.lab5.app-mergeDebugResources-49:/layout/activity_main.xml",
+        "source": "/Users/olyadowgal/.gradle/daemon/7.4/com.dovhal.android_labs.android.lab5.app-main-52:/layout/activity_main.xml"
     }
 ]

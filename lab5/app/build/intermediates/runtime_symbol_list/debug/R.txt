@@ -3165,9 +3165,12 @@ int id textEnd 0x7f0801ce
 int id textSpacerNoButtons 0x7f0801cf
 int id textSpacerNoTitle 0x7f0801d0
 int id textStart 0x7f0801d1
+int id textTime 0x7f08020a
 int id textTop 0x7f0801d2
 int id textViewLarge 0x7f0801d3
 int id textViewSmall 0x7f0801d4
+int id textViewTemperature 0x7f08020b
+int id textWindSpeed 0x7f08020c
 int id text_input_end_icon 0x7f0801d5
 int id text_input_error_icon 0x7f0801d6
 int id text_input_start_icon 0x7f0801d7
@@ -3426,6 +3429,7 @@ int layout select_dialog_item_material 0x7f0b006a
 int layout select_dialog_multichoice_material 0x7f0b006b
 int layout select_dialog_singlechoice_material 0x7f0b006c
 int layout support_simple_spinner_dropdown_item 0x7f0b006d
+int layout weather_dialog_fragment 0x7f0b006e
 int menu chuck_main 0x7f0d0000
 int menu chuck_transaction 0x7f0d0001
 int mipmap ic_launcher 0x7f0e0000

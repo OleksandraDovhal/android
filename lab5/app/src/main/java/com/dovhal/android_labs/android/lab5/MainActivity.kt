@@ -1,7 +1,6 @@
 package com.dovhal.android_labs.android.lab5
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.MutableLiveData
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -9,6 +8,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.dovhal.android_labs.android.lab5.adapters.CityListAdapter
 import com.dovhal.android_labs.android.lab5.database.entities.City
 import com.dovhal.android_labs.android.lab5.di.SingletonHolder
+import com.dovhal.android_labs.android.lab5.dialogs.WeatherDialog
 import com.dovhal.android_labs.android.lab5.network.responces.WeatherResponse
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
@@ -67,7 +67,10 @@ class MainActivity : AppCompatActivity(), CityListAdapter.Callback {
         }
 
         result.observe(this) {
-            Toast.makeText(this, it.toString(), Toast.LENGTH_SHORT).show()
+            WeatherDialog(
+                it,
+                this
+            ).show()
         }
 
     }

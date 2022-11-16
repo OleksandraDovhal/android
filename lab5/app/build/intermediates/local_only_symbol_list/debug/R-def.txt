@@ -16,10 +16,14 @@ id action_FirstFragment_to_SecondFragment
 id action_SecondFragment_to_FirstFragment
 id nav_graph
 id recycleView
+id textTime
 id textViewLarge
 id textViewSmall
+id textViewTemperature
+id textWindSpeed
 layout activity_main
 layout recyclerview_item
+layout weather_dialog_fragment
 mipmap ic_launcher
 mipmap ic_launcher_round
 navigation nav_graph
