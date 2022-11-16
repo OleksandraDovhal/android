@@ -4,13 +4,13 @@ plugins {
 }
 
 android {
-    namespace 'com.eragoo.cdu_labs.andoroid.lab3'
-    compileSdk 32
+    namespace 'com.dovhal.android_labs.android.lab3'
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.eragoo.cdu_labs.andoroid.lab3"
+        applicationId "com.dovhal.android_labs.android.lab3"
         minSdk 29
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 

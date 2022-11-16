@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.eragoo.cdu_labs.andoroid.lab3.app-mergeDebugResources-31:/values-night-v8/values-night-v8.xml",
+            "outputFile": "com.dovhal.android_labs.android.lab3.app-mergeDebugResources-31:/values-night-v8/values-night-v8.xml",
             "map": [
                 {
                     "source": "/Users/olyadowgal/Projects/android/Lab3(4)/app/src/main/res/values-night/themes.xml",

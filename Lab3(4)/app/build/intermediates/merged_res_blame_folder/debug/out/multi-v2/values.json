@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.eragoo.cdu_labs.andoroid.lab3.app-mergeDebugResources-31:/values/values.xml",
+            "outputFile": "com.dovhal.android_labs.android.lab3.app-mergeDebugResources-31:/values/values.xml",
             "map": [
                 {
                     "source": "/Users/olyadowgal/.gradle/caches/transforms-3/3d0b12a6a2875ebc8055ad98f7863014/transformed/cardview-1.0.0/res/values/values.xml",

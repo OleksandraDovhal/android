@@ -17,6 +17,6 @@ layout recyclerview_item
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
-style Theme.Lab3
+style Theme.Lab5
 xml backup_rules
 xml data_extraction_rules

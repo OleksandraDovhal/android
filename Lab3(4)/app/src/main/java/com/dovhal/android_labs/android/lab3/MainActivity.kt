@@ -6,7 +6,6 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.dovhal.android_labs.android.lab3.database.City
 import com.dovhal.android_labs.android.lab3.di.SingletonHolder
-import com.eragoo.cdu_labs.andoroid.lab3.R
 import kotlinx.coroutines.DelicateCoroutinesApi
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope

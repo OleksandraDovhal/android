@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.eragoo.cdu_labs.andoroid.lab3.app-mergeDebugResources-31:/values-ro/values-ro.xml",
+            "outputFile": "com.dovhal.android_labs.android.lab5.app-mergeDebugResources-32:/values-ro/values-ro.xml",
             "map": [
                 {
-                    "source": "/Users/olyadowgal/.gradle/caches/transforms-3/205feb206244c8c1b4b56fcdc8d69988/transformed/core-1.8.0/res/values-ro/values-ro.xml",
+                    "source": "/Users/olyadowgal/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/res/values-ro/values-ro.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

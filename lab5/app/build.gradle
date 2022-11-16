@@ -4,15 +4,19 @@ plugins {
 }
 
 android {
-    namespace 'com.eragoo.cdu_labs.andoroid.lab3'
-    compileSdk 32
+    namespace 'com.dovhal.android_labs.android.lab5'
+    compileSdk 33
 
     defaultConfig {
-        applicationId "com.eragoo.cdu_labs.andoroid.lab3"
+        applicationId "com.dovhal.android_labs.android.lab5"
         minSdk 29
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
+
+        //TODO: use correct API key
+        buildConfigField 'String', 'BASE_URL', '"https://openweathermap.org/data/2.5/"'
+        buildConfigField 'String', 'API_KEY', '"eba7a84d36f0df97c15b6a10dc743760"'
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -34,20 +38,36 @@ android {
 apply plugin: 'kotlin-kapt'
 
 dependencies {
-    def roomVersion = "2.4.0-alpha03" // check latest version from docs
+    def roomVersion = "2.5.0-beta02" // check latest version from docs
 
 
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
     implementation 'androidx.appcompat:appcompat:1.5.1'
     implementation 'com.google.android.material:material:1.7.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
 
     //Room
     implementation "androidx.room:room-runtime:$roomVersion"
     kapt "androidx.room:room-compiler:$roomVersion"
     implementation "androidx.room:room-ktx:$roomVersion"
     androidTestImplementation "androidx.room:room-testing:$roomVersion"
+
+    //Chuck - library for visualize http requests
+    debugImplementation 'com.readystatesoftware.chuck:library:1.1.0'
+    releaseImplementation 'com.readystatesoftware.chuck:library-no-op:1.1.0'
+
+    //Kotlin Serialization - to parce JSON
+    implementation 'org.jetbrains.kotlinx:kotlinx-serialization-json:1.3.2'
+
+    //Retrofit
+    implementation "com.squareup.retrofit2:retrofit:2.9.0"
+    implementation 'com.jakewharton.retrofit:retrofit2-kotlinx-serialization-converter:0.8.0'
+
+    // OkHttp
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:4.9.1"))
+    implementation("com.squareup.okhttp3:okhttp")
+    implementation("com.squareup.okhttp3:logging-interceptor")
 }
