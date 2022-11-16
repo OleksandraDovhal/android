@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.eragoo.cdu_labs.andoroid.lab3"
+    package="com.dovhal.android_labs.android.lab3"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
         android:minSdkVersion="29"
-        android:targetSdkVersion="32" />
+        android:targetSdkVersion="33" />
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -47,7 +47,7 @@
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.eragoo.cdu_labs.andoroid.lab3.androidx-startup"
+            android:authorities="com.dovhal.android_labs.android.lab3.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"

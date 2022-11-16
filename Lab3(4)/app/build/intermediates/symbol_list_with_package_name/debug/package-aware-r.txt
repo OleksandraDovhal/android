@@ -1,4 +1,4 @@
-com.eragoo.cdu_labs.andoroid.lab3
+com.dovhal.android_labs.android.lab3
 anim abc_fade_in
 anim abc_fade_out
 anim abc_grow_fade_in_from_bottom

@@ -8,5 +8,6 @@ class App : Application() {
     override fun onCreate() {
         super.onCreate()
         SingletonHolder.init(this)
+        SingletonHolder.clearDatabase()
     }
 }

@@ -6,7 +6,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.dovhal.android_labs.android.lab3.database.City
-import com.eragoo.cdu_labs.andoroid.lab3.R
 
 class CityListAdapter(private val data: List<City>) : RecyclerView.Adapter<CityListAdapter.MyViewHolder>() {
     class MyViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){

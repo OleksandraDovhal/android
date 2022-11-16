@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.eragoo.cdu_labs.andoroid.lab3.app-mergeDebugResources-31:/values-be/values-be.xml",
+            "outputFile": "com.dovhal.android_labs.android.lab3.app-mergeDebugResources-31:/values-be/values-be.xml",
             "map": [
                 {
                     "source": "/Users/olyadowgal/.gradle/caches/transforms-3/53edefe15d403f8467620aa121e38059/transformed/material-1.7.0/res/values-be/values-be.xml",
