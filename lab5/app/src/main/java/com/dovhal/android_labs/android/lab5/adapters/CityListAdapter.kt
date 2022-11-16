@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.dovhal.android_labs.android.lab5.R
-import com.dovhal.android_labs.android.lab5.database.City
+import com.dovhal.android_labs.android.lab5.database.entities.City
 
 class CityListAdapter(
     data: List<City>,
@@ -24,9 +24,14 @@ class CityListAdapter(
             notifyDataSetChanged()
         }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CityViewHolder {
-        val view = LayoutInflater.from(parent.context).inflate(viewType, parent, false)
-        return CityViewHolder(view)
+    override fun onCreateViewHolder(
+        parent: ViewGroup,
+        viewType: Int
+    ): CityListAdapter.CityViewHolder {
+        val itemView = LayoutInflater.from(parent.context)
+            .inflate(R.layout.recyclerview_item, parent, false)
+
+        return CityViewHolder(itemView)
     }
 
     override fun getItemCount() = cityList.size

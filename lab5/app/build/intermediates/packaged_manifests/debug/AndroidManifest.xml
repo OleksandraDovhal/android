@@ -33,6 +33,15 @@
         android:testOnly="true"
         android:theme="@style/Theme.Lab5" >
         <activity
+            android:name="com.dovhal.android_labs.android.lab5.WeatherActivity"
+            android:exported="false"
+            android:label="@string/title_activity_weather"
+            android:theme="@style/Theme.Lab5.NoActionBar" >
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name="com.dovhal.android_labs.android.lab5.MainActivity"
             android:exported="true" >
             <intent-filter>
@@ -70,6 +79,13 @@
         <service
             android:name="com.readystatesoftware.chuck.internal.support.ClearTransactionsService"
             android:exported="false" />
+
+        <uses-library
+            android:name="androidx.window.extensions"
+            android:required="false" />
+        <uses-library
+            android:name="androidx.window.sidecar"
+            android:required="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

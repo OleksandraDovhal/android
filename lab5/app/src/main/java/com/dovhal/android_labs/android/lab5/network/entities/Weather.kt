@@ -1,11 +1,12 @@
 package com.dovhal.android_labs.android.lab5.network.entities
 
-import kotlinx.serialization.Serializable
+import com.squareup.moshi.JsonClass
 
-@Serializable
+@JsonClass(generateAdapter = true)
 data class Weather(
-    val id: Long,
-    val main: String,
-    val description: String,
-    val icon: String
+    val temperature: Float,
+    val windspeed: Float,
+    val winddirection: Float,
+    val weathercode: Int,
+    val time: String
 )

@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "com.dovhal.android_labs.android.lab5.app-mergeDebugResources-32:/values-v16/values-v16.xml",
+            "outputFile": "com.dovhal.android_labs.android.lab5.app-mergeDebugResources-48:/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Users/olyadowgal/.gradle/caches/transforms-3/f3889f18d4f26e70cef4e17d11226053/transformed/core-1.9.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/Users/olyadowgal/.gradle/caches/transforms-3/35247393b79a5fe3c4f500e2adf3d76f/transformed/appcompat-1.5.1/res/values-v16/values-v16.xml",
+                    "source": "/Users/olyadowgal/.gradle/caches/transforms-3/25fcb2a806ce3dc153caf0932fde7683/transformed/appcompat-1.5.1/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/Users/olyadowgal/.gradle/caches/transforms-3/2396df7eb260ea1111c06a5e3946a8eb/transformed/core-1.9.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]
