@@ -35,10 +35,15 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+    buildFeatures {
+        viewBinding true
+    }
 }
 apply plugin: 'kotlin-kapt'
 
 dependencies {
+    implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
+    implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
     def roomVersion = "2.5.0-beta02" // check latest version from docs
 
 

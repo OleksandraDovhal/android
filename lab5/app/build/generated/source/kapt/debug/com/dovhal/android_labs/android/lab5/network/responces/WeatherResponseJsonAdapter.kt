@@ -23,7 +23,7 @@ public class WeatherResponseJsonAdapter(
   moshi: Moshi,
 ) : JsonAdapter<WeatherResponse>() {
   private val options: JsonReader.Options = JsonReader.Options.of("latitude", "longitude",
-      "enerationtime_ms", "elevation", "current_weather")
+      "generationtime_ms", "elevation", "current_weather")
 
   private val floatAdapter: JsonAdapter<Float> = moshi.adapter(Float::class.java, emptySet(),
       "latitude")
@@ -37,7 +37,7 @@ public class WeatherResponseJsonAdapter(
   public override fun fromJson(reader: JsonReader): WeatherResponse {
     var latitude: Float? = null
     var longitude: Float? = null
-    var enerationTime: Float? = null
+    var generationTime: Float? = null
     var elevation: Float? = null
     var currentWeather: Weather? = null
     reader.beginObject()
@@ -47,8 +47,8 @@ public class WeatherResponseJsonAdapter(
             "latitude", reader)
         1 -> longitude = floatAdapter.fromJson(reader) ?: throw Util.unexpectedNull("longitude",
             "longitude", reader)
-        2 -> enerationTime = floatAdapter.fromJson(reader) ?:
-            throw Util.unexpectedNull("enerationTime", "enerationtime_ms", reader)
+        2 -> generationTime = floatAdapter.fromJson(reader) ?:
+            throw Util.unexpectedNull("generationTime", "generationtime_ms", reader)
         3 -> elevation = floatAdapter.fromJson(reader) ?: throw Util.unexpectedNull("elevation",
             "elevation", reader)
         4 -> currentWeather = weatherAdapter.fromJson(reader) ?:
@@ -64,8 +64,8 @@ public class WeatherResponseJsonAdapter(
     return WeatherResponse(
         latitude = latitude ?: throw Util.missingProperty("latitude", "latitude", reader),
         longitude = longitude ?: throw Util.missingProperty("longitude", "longitude", reader),
-        enerationTime = enerationTime ?: throw Util.missingProperty("enerationTime",
-            "enerationtime_ms", reader),
+        generationTime = generationTime ?: throw Util.missingProperty("generationTime",
+            "generationtime_ms", reader),
         elevation = elevation ?: throw Util.missingProperty("elevation", "elevation", reader),
         currentWeather = currentWeather ?: throw Util.missingProperty("currentWeather",
             "current_weather", reader)
@@ -81,8 +81,8 @@ public class WeatherResponseJsonAdapter(
     floatAdapter.toJson(writer, value_.latitude)
     writer.name("longitude")
     floatAdapter.toJson(writer, value_.longitude)
-    writer.name("enerationtime_ms")
-    floatAdapter.toJson(writer, value_.enerationTime)
+    writer.name("generationtime_ms")
+    floatAdapter.toJson(writer, value_.generationTime)
     writer.name("elevation")
     floatAdapter.toJson(writer, value_.elevation)
     writer.name("current_weather")

@@ -12,6 +12,5 @@ interface WeatherApiService {
         @Query("latitude") latitude: Float,
         @Query("longitude") longitude: Float,
         @Query("current_weather") currentWeather: Boolean
-    ): Call<WeatherResponse>
-
+    ): WeatherResponse
 }

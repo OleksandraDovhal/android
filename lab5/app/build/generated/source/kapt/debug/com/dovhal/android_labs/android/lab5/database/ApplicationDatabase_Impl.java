@@ -17,6 +17,8 @@ import androidx.sqlite.db.SupportSQLiteDatabase;
 import androidx.sqlite.db.SupportSQLiteOpenHelper;
 import androidx.sqlite.db.SupportSQLiteOpenHelper.Callback;
 import androidx.sqlite.db.SupportSQLiteOpenHelper.Configuration;
+import com.dovhal.android_labs.android.lab5.database.dao.CityDao;
+import com.dovhal.android_labs.android.lab5.database.dao.CityDao_Impl;
 import java.lang.Class;
 import java.lang.Override;
 import java.lang.String;
@@ -36,13 +38,13 @@ public final class ApplicationDatabase_Impl extends ApplicationDatabase {
 
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
-    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(4) {
+    final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(5) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `city` (`city_id` TEXT NOT NULL, `city_name` TEXT NOT NULL, `city_area` TEXT NOT NULL, `founded` INTEGER NOT NULL, `location` TEXT NOT NULL, PRIMARY KEY(`city_id`))");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `city` (`city_id` TEXT NOT NULL, `city_name` TEXT NOT NULL, `city_area` TEXT NOT NULL, `founded` INTEGER NOT NULL, `latitude` REAL NOT NULL, `longitude` REAL NOT NULL, PRIMARY KEY(`city_id`))");
         _db.execSQL("CREATE INDEX IF NOT EXISTS `index_city_city_id` ON `city` (`city_id`)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '3c6bb39bdd015c6579a44bdb1d0cf5a6')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '4a1459cdf624ce11405e45a7f117e059')");
       }
 
       @Override
@@ -86,25 +88,26 @@ public final class ApplicationDatabase_Impl extends ApplicationDatabase {
 
       @Override
       public RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsCity = new HashMap<String, TableInfo.Column>(5);
+        final HashMap<String, TableInfo.Column> _columnsCity = new HashMap<String, TableInfo.Column>(6);
         _columnsCity.put("city_id", new TableInfo.Column("city_id", "TEXT", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCity.put("city_name", new TableInfo.Column("city_name", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCity.put("city_area", new TableInfo.Column("city_area", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsCity.put("founded", new TableInfo.Column("founded", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsCity.put("location", new TableInfo.Column("location", "TEXT", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsCity.put("latitude", new TableInfo.Column("latitude", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsCity.put("longitude", new TableInfo.Column("longitude", "REAL", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysCity = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesCity = new HashSet<TableInfo.Index>(1);
         _indicesCity.add(new TableInfo.Index("index_city_city_id", false, Arrays.asList("city_id"), Arrays.asList("ASC")));
         final TableInfo _infoCity = new TableInfo("city", _columnsCity, _foreignKeysCity, _indicesCity);
         final TableInfo _existingCity = TableInfo.read(_db, "city");
         if (! _infoCity.equals(_existingCity)) {
-          return new RoomOpenHelper.ValidationResult(false, "city(com.dovhal.android_labs.android.lab5.database.City).\n"
+          return new RoomOpenHelper.ValidationResult(false, "city(com.dovhal.android_labs.android.lab5.database.entities.City).\n"
                   + " Expected:\n" + _infoCity + "\n"
                   + " Found:\n" + _existingCity);
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "3c6bb39bdd015c6579a44bdb1d0cf5a6", "fe017cb8b6bd73db27af5bc365a8141d");
+    }, "4a1459cdf624ce11405e45a7f117e059", "56144e0098cc9d0b3fdc2ecfe01e4891");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

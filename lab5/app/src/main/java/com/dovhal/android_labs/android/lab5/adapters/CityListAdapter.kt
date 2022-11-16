@@ -6,7 +6,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.dovhal.android_labs.android.lab5.R
-import com.dovhal.android_labs.android.lab5.database.City
+import com.dovhal.android_labs.android.lab5.database.entities.City
 
 class CityListAdapter(
     data: List<City>,

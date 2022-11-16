@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "com.dovhal.android_labs.android.lab5.app-mergeDebugResources-49:/layout/activity_main.xml",
+        "source": "com.dovhal.android_labs.android.lab5.app-main-52:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.dovhal.android_labs.android.lab5.app-mergeDebugResources-49:/layout/recyclerview_item.xml",
+        "source": "com.dovhal.android_labs.android.lab5.app-main-52:/layout/recyclerview_item.xml"
+    }
+]

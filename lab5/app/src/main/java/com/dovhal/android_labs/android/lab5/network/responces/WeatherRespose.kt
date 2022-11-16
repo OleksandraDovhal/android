@@ -8,7 +8,7 @@ import com.squareup.moshi.JsonClass
 data class WeatherResponse(
     val latitude: Float,
     val longitude: Float,
-    @Json(name = "enerationtime_ms") val enerationTime: Float,
+    @Json(name = "generationtime_ms") val generationTime: Float,
     @Json(name = "elevation") val elevation: Float,
     @Json(name = "current_weather") val currentWeather: Weather
 )
